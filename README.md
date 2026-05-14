@@ -4,7 +4,7 @@ Use this as the starting point for new repos. Includes:
 
 | Tool | What it does |
 |------|-------------|
-| [Gitleaks](https://github.com/gitleaks/gitleaks) | Pattern-based secret scan on every push/PR (public repos only by default) |
+| [Gitleaks](https://github.com/gitleaks/gitleaks) | Pattern-based secret scan on every push/PR (no license needed for personal accounts) |
 | [TruffleHog](https://github.com/trufflesecurity/trufflehog) | Verified secret scan — contacts live APIs to confirm secrets are real |
 | [Dependabot](https://docs.github.com/en/code-security/dependabot) | Weekly PRs for outdated dependencies and GitHub Actions versions |
 
@@ -17,9 +17,3 @@ After creating, edit `.github/dependabot.yml` and keep only the ecosystems the r
 - `pip` — Python
 - `swift` — Swift Package Manager
 - `github-actions` — always keep this one
-
-## Gitleaks on private repos
-
-Gitleaks requires a license for private repos. Get one free at https://gitleaks.io/products.html
-then add it as a `GITLEAKS_LICENSE` secret in the repo's Settings → Secrets and variables → Actions.
-TruffleHog works on all repo types with no license needed.
