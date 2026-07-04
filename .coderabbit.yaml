@@ -19,6 +19,8 @@ reviews:
     drafts: false
     ignore_usernames:
       - "dependabot[bot]"
+      - "renovate[bot]"
+      - "github-actions[bot]"
 
 chat:
   auto_reply: true
